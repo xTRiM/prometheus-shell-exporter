@@ -20,8 +20,8 @@ fi
 echo "[~] Cleanup bin/ dir"
 rm -rf "${project_dir}/bin/"
 
-for arc in amd64; do
-    for os in linux windows; do
+for arc in mips; do
+    for os in linux; do
         for app in 'shell-exporter'; do
 
             app_folder="${app}-${APP_VERSION:-draft}.${os}.${arc}"
